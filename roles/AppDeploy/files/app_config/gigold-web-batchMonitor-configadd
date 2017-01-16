@@ -1,0 +1,6 @@
+#BATCH
+batch.jdbc.testWhileIdle=false
+batch.jdbc.validationQuery=
+batch.data.source.init=true
+batch.job.configuration.file.dir=/data/deploy/gigold-web-batchMonitor/conf
+batch.job.service.reaper.interval=60000

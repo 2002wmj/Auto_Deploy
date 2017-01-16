@@ -1,0 +1,8 @@
+app_user: oper
+app_group: oper
+app_dir: /data/deploy/{{project_name}}-{{group_name}}-{{app_name}}
+app_tar_name: "{{project_name}}-{{group_name}}-{{app_name}}.tar.gz"
+config_dir: /data/deploy/{{project_name}}-{{group_name}}-{{item}}/conf
+config_name: "{{project_name}}-{{group_name}}-{{item}}-config"
+server_shell_dir: /data/deploy/{{project_name}}-{{group_name}}-{{item}}/ROOT/bin
+web_server_shell_dir: /data/deploy/{{project_name}}-{{group_name}}-{{item}}/apache-tomcat/bin

@@ -1,0 +1,4 @@
+dispatchingCenter.username.des=root
+dispatchingCenter.password.des=G58l2lvsP8uCuta4JcHMl2en9zv7xRut
+dispatchingCenter.namespace=dd-job
+zooKeeper.connectString=172.16.1.26:2181,172.16.1.106:2181,172.16.1.107:2181

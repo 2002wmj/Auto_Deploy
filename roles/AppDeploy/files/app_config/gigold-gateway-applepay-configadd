@@ -1,0 +1,10 @@
+applepay.rcvname=lejiayuan
+applepay.back.url=http://www.beijing.com.cn
+applepay.refreason=refund
+applepay.merid=10124
+applepay.refoprt=42593
+applepay.md5.key=gigold510
+applepay.rsa.keypath=/data/deploy/gigold-gateway-applepay/certs/Public1024.key
+applepay.depositQueryUrl=https://api.yizhifubj.com/merchant/order/order_ack_oid_list.jsp
+applepay.refundApplyUrl=https://api.yizhifubj.com/merchant/refund/ref_ack_submit.jsp
+fdc.orderprefix=P

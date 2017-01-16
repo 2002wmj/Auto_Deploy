@@ -1,0 +1,6 @@
+- copy: src=app_tar{{AppVersion}}{{app_tar_name}} dest="/root" owner=root group=root 
+  notify:
+#  - backup app dir
+#  - rm old app dir
+#  - install app tar
+  - update app

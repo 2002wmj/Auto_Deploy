@@ -1,0 +1,11 @@
+- hosts:
+  - all
+  remote_user: root
+  gather_facts: false
+  vars:
+  - TaskName: update_app
+  - AppVersion: /
+  - AutoUpgrade: upgrade
+  roles:
+  - role: "{{role_name}}"
+    when: instance_id in instances

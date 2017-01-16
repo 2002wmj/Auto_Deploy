@@ -1,0 +1,17 @@
+[LH_web01]
+172.16.201.1 instance_id=1
+172.16.201.2 instance_id=2
+[LH_web01:vars]
+app_names = lehome-backstage,lehome-merchant
+
+[LH_service01]
+172.16.201.3 instance_id=1
+172.16.201.4 instance_id=2
+[LH_service01:vars]
+app_names = lehome-mobile-api
+
+[LH_service02]
+172.16.201.6 instance_id=1
+172.16.201.7 instance_id=2
+[LH_service02:vars]
+app_names = compatibility-service

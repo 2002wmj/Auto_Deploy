@@ -1,0 +1,8 @@
+weixin.merid=1234505701
+weixin.appid=wxd53437d10f28c942
+weixin.cert.path=/data/deploy/gigold-gateway-weixin/certs/apiclient_cert.p12
+weixin.notify.url=https://i.gigold.com/fdc/weixin/depositNotify.do
+fdc.orderprefix=P
+weixin.merid.new=1349457101
+weixin.appid.new=wx86c19a9478abc351
+weixin.cert.path.new=/data/deploy/gigold-gateway-weixin/certs/apiclient_cert_new.p12

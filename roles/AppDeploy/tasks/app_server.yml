@@ -1,0 +1,4 @@
+- raw: "source /etc/profile && cd {{server_shell_dir}} && su oper -c './service.sh {{ServerST}}'"
+  when: group_name == "service" or group_name == "gateway"
+- raw: "source /etc/profile && cd {{web_server_shell_dir}} && su oper -c './tomcat.sh {{ServerST}}'"
+  when: group_name == "web"

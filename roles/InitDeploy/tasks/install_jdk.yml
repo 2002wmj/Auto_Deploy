@@ -1,0 +1,10 @@
+- group: name={{ app_group }}
+- user: name={{ app_user }} group={{ app_group }} state=present
+- shell: "mkdir -p {{ app_dir }} && chown -R {{ app_user }}:{{ app_group }} {{ app_dir }}"
+- copy: src="jdk-7u79-linux-x64.tar.gz" dest="/root" owner=root group=root
+  notify:
+  - install jdk
+  - add java export
+#- copy: src={{ gateway_name }} dest= /tmp/app.tar.gz
+#- shell: "tar -zxvf /tmp/app.tar.gz -C {{ app_dir }} && chown -R {{ app_user }}:{{ app_group }} {{ app_dir }}"
+

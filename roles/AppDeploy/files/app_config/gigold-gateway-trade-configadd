@@ -1,0 +1,22 @@
+##############################    CMPAY    #######
+#CMPAY服务端IP
+cmpay.host=111.8.12.35
+#CMPAY服务端Port
+cmpay.port=29095
+#本地监听端口
+cmpay.local.port=8901
+#SSL  protocol
+cmpay.ssl.protocol=TLS
+#SSL  Server  config
+cmpay.ssl.server.store.psw.des=G1g0ld
+cmpay.ssl.server.key.store=../../certs/cmpay/sChat.jks
+cmpay.ssl.server.trust.store=../../certs/cmpay/sChat.jks
+#SSL  client  config
+cmpay.ssl.client.store.psw.des=G1g0ld
+cmpay.ssl.client.key.store=../../certs/cmpay/sChat.jks
+cmpay.ssl.client.trust.store=../../certs/cmpay/sChat.jks
+#CMPAY分配的代理商编号
+cmpay.reqsys=LJY160216
+#渠道接入商密码,用于MD5加密
+cmpay.salt.des=l!#!j)!*y&
+##############################    CMPAY    #######

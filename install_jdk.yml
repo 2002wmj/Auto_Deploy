@@ -1,0 +1,11 @@
+- hosts: 
+#  - service_group
+#  - web_group
+#  - gateway_group
+  - all
+  remote_user: root
+  gather_facts: false
+  vars:
+  - TaskName: install_jdk
+  roles:
+  - { role: InitDeploy, when: instance_id in instances }

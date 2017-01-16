@@ -1,0 +1,5 @@
+- include: install_jdk.yml
+  when: TaskName=="install_jdk"
+#- include: optimize_centos.yml
+- include: install_tomcat.yml
+  when: TaskName=="install_tomcat" and group_name == "web"

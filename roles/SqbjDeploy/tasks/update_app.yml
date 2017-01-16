@@ -1,0 +1,4 @@
+- copy: src=app_tar/{{project_name}}-{{group_name}}-{{item}}.tar.gz dest="/root" owner=root group=root 
+  with_items: "{{service_name}}"
+- script: 'script/update_app.sh {{item}} {{group_name}} {{full_release}} {{AutoUpgrade}} {{project_name}}'
+  with_items: "{{service_name}}"

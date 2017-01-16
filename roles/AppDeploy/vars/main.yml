@@ -1,0 +1,8 @@
+app_user: oper
+app_group: oper
+app_dir: /data/deploy/gigold-{{group_name}}-{{app_name}}
+app_tar_name: gigold-{{group_name}}-{{app_name}}.tar.gz
+config_dir: /data/deploy/gigold-{{group_name}}-{{app_name}}/conf
+config_name: gigold-{{group_name}}-{{app_name}}-config
+server_shell_dir: /data/deploy/gigold-{{group_name}}-{{app_name}}/ROOT/bin
+web_server_shell_dir: /data/deploy/gigold-{{group_name}}-{{app_name}}/apache-tomcat/bin

@@ -1,0 +1,372 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# Ex 1: Ungrouped hosts, specify before any group headers.
+
+####ansible-test#######
+[test]
+172.16.1.210 instance_id=1
+172.16.1.211  instance_id=2
+[test:vars]
+app_name = upload
+group_name = web
+
+
+
+######## ALL-gigold-services #############
+[SH_S_cashier]
+172.16.3.21     instance_id=1
+172.16.3.101     instance_id=2
+[SH_S_cashier:vars]
+app_name = cashier
+
+
+[SH_S_customer]
+172.16.3.22     instance_id=1 dubbo_group="pro"
+172.16.3.102     instance_id=2 dubbo_group="pro"
+172.16.3.152     instance_id=3 dubbo_group="dispatch"
+[SH_S_customer:vars]
+app_name = customer
+
+
+[SH_S_dispatchingMonitor]
+172.16.3.23     instance_id=1
+172.16.3.103     instance_id=2
+[SH_S_dispatchingMonitor:vars]
+app_name = dispatchingMonitor
+
+
+[SH_S_fdc]
+172.16.3.24     instance_id=1
+172.16.3.104     instance_id=2
+[SH_S_fdc:vars]
+app_name = fdc
+
+
+[SH_S_fdcBatch]
+172.16.3.25     instance_id=1 dubbo_group="pro"
+172.16.3.105     instance_id=2 dubbo_group="pro"
+172.16.3.155     instance_id=3 dubbo_group="dispatch"
+[SH_S_fdcBatch:vars]
+app_name = fdcBatch
+
+
+[SH_S_riskControl]
+172.16.3.26     instance_id=1 dubbo_group="pro"
+172.16.3.106     instance_id=2 dubbo_group="pro"
+172.16.3.156     instance_id=3 dubbo_group="dispatch"
+[SH_S_riskControl:vars]
+app_name = riskControl
+
+
+
+[SH_S_foundationBatch]
+172.16.3.27     instance_id=1 dubbo_group="dispatch"
+[SH_S_foundationBatch:vars]
+app_name = foundationBatch
+
+
+[SH_S_fundBatch]
+172.16.3.28     instance_id=1 dubbo_group="pro"
+172.16.3.108     instance_id=2 dubbo_group="pro"
+172.16.3.158     instance_id=3 dubbo_group="dispatch"
+[SH_S_fundBatch:vars]
+app_name = fundBatch
+
+
+[SH_S_merchant]
+172.16.3.29     instance_id=1 dubbo_group="pro"
+172.16.3.109     instance_id=2 dubbo_group="pro"
+172.16.3.159     instance_id=3 dubbo_group="dispatch"
+[SH_S_merchant:vars]
+app_name = merchant
+
+
+[SH_S_account]
+172.16.3.30     instance_id=1 dubbo_group="pro"
+172.16.3.110     instance_id=2 dubbo_group="pro"
+172.16.3.150     instance_id=3 dubbo_group="dispatch"
+[SH_S_account:vars]
+app_name = account
+
+[SH_S_runManager]
+172.16.3.31     instance_id=1
+172.16.3.111     instance_id=2
+[SH_S_runManager:vars]
+app_name = runManager
+
+
+[SH_S_trade]
+172.16.3.32     instance_id=1 dubbo_group="pro"
+172.16.3.112     instance_id=2 dubbo_group="pro"
+172.16.3.153     instance_id=3 dubbo_group="dispatch"
+[SH_S_trade:vars]
+app_name = trade
+
+
+[SH_S_repeat]
+172.16.3.33     instance_id=1
+172.16.3.113     instance_id=2
+[SH_S_repeat:vars]
+app_name = repeat
+
+
+[SH_S_industrypay]
+172.16.3.34     instance_id=1 dubbo_group="pro"
+172.16.3.114     instance_id=2 dubbo_group="pro"
+172.16.3.154     instance_id=3 dubbo_group="dispatch"
+[SH_S_industrypay:vars]
+app_name = industrypay
+
+[SH_S_cardpos]
+172.16.3.35     instance_id=1
+172.16.3.115     instance_id=2
+[SH_S_cardpos:vars]
+app_name = cardpos
+
+[SH_S_posp]
+172.16.3.36     instance_id=1 dubbo_group="pro"
+172.16.3.116     instance_id=2 dubbo_group="pro"
+172.16.3.157     instance_id=3 dubbo_group="dispatch"
+[SH_S_posp:vars]
+app_name = posp
+
+[SH_S_billCenter]
+172.16.3.37     instance_id=1
+172.16.3.117     instance_id=2
+[SH_S_billCenter:vars]
+app_name = billCenter
+
+[service_group:children]
+SH_S_cashier
+SH_S_customer
+SH_S_dispatchingMonitor
+SH_S_fdc
+SH_S_fdcBatch
+SH_S_riskControl
+SH_S_foundationBatch
+SH_S_fundBatch
+SH_S_merchant
+SH_S_account
+SH_S_runManager
+SH_S_trade
+SH_S_repeat
+SH_S_industrypay
+SH_S_cardpos
+SH_S_posp
+SH_S_billCenter
+[service_group:vars]
+group_name = service
+group_relation = provider
+
+##############  all-gigold-gateways ###############
+[SH_G_smsBC]
+172.16.4.21     instance_id=1
+172.16.4.101     instance_id=2
+[SH_G_smsBC:vars]
+app_name = smsBC
+
+[SH_G_citic]
+172.16.4.22     instance_id=1
+172.16.4.102     instance_id=2
+[SH_G_citic:vars]
+app_name = citic
+
+[SH_G_htfFund]
+172.16.4.23     instance_id=1
+172.16.4.103     instance_id=2
+[SH_G_htfFund:vars]
+app_name = htfFund
+
+[SH_G_unionpay]
+172.16.4.24     instance_id=1
+172.16.4.104     instance_id=2
+[SH_G_unionpay:vars]
+app_name = unionpay
+
+[SH_G_weixin]
+172.16.4.25     instance_id=1
+172.16.4.105     instance_id=2
+[SH_G_weixin:vars]
+app_name = weixin
+
+[SH_G_trade]
+172.16.4.26     instance_id=1 dubbo_group="pro"
+172.16.4.106     instance_id=2 dubbo_group="pro"
+172.16.4.156     instance_id=3 dubbo_group="dispatch"
+[SH_G_trade:vars]
+app_name = trade
+
+[SH_G_pospBusiness]
+172.16.4.27     instance_id=1
+172.16.4.107     instance_id=2
+[SH_G_pospBusiness:vars]
+app_name = pospBusiness
+
+[SH_G_pospManage]
+172.16.4.28     instance_id=1
+172.16.4.108     instance_id=2
+[SH_G_pospManage:vars]
+app_name = pospManage
+
+
+[SH_G_cardpos]
+172.16.4.29     instance_id=1
+172.16.4.109     instance_id=2
+[SH_G_cardpos:vars]
+app_name = cardpos
+
+[SH_G_fdcDownload]
+172.16.4.30     instance_id=1 dubbo_group="pro"
+172.16.4.110     instance_id=2 dubbo_group="pro"
+172.16.4.150     instance_id=3 dubbo_group="dispatch"
+[SH_G_fdcDownload:vars]
+app_name = fdcDownload
+
+
+[SH_G_applepay]
+172.16.4.31     instance_id=1
+172.16.4.111     instance_id=2
+[SH_G_applepay:vars]
+app_name = applepay
+
+[SH_G_voiceCL]
+172.16.4.32     instance_id=1
+172.16.4.112     instance_id=2
+[SH_G_voiceCL:vars]
+app_name = voiceCL
+
+[SH_G_quickpay]
+172.16.4.33     instance_id=1
+172.16.4.113     instance_id=2
+[SH_G_quickpay:vars]
+app_name = quickpay
+
+[SH_G_payment]
+172.16.4.34     instance_id=1
+172.16.4.114     instance_id=2
+[SH_G_payment:vars]
+app_name = payment
+
+
+[SH_G_guardRoute]
+#172.16.202.15     instance_id=1
+[SH_G_guardRoute:vars]
+app_name = guardRoute
+
+[SH_G_guard]
+172.16.202.16     instance_id=1
+172.16.202.15     instance_id=2
+172.16.202.17     instance_id=3
+[SH_G_guard:vars]
+app_name = guard
+
+
+[gateway_group:children]
+SH_G_smsBC
+SH_G_citic
+SH_G_htfFund
+SH_G_unionpay
+SH_G_weixin
+SH_G_trade
+SH_G_pospBusiness
+SH_G_pospManage
+SH_G_cardpos
+SH_G_fdcDownload
+SH_G_applepay
+SH_G_voiceCL
+SH_G_quickpay
+SH_G_guardRoute
+SH_G_guard
+SH_G_payment
+[gateway_group:vars]
+group_name = gateway
+group_relation = provider
+
+########### all-gigold-webs #################
+[SH_W_batchMonitor]
+172.16.2.21     instance_id=1
+172.16.2.101     instance_id=2
+[SH_W_batchMonitor:vars]
+app_name = batchMonitor
+
+
+[SH_W_cashier]
+172.16.2.22     instance_id=1
+172.16.2.102     instance_id=2
+[SH_W_cashier:vars]
+app_name = cashier
+
+
+[SH_W_dispatchingCenter]
+#172.16.2.23     instance_id=1 dubbo_group="dispatch"
+#172.16.2.103     instance_id=2
+[SH_W_dispatchingCenter:vars]
+app_name = dispatchingCenter
+
+[SH_W_fdc]
+172.16.2.24     instance_id=1
+172.16.2.104     instance_id=2
+[SH_W_fdc:vars]
+app_name = fdc
+
+
+[SH_W_foundation]
+172.16.2.25     instance_id=1
+172.16.2.105     instance_id=2
+[SH_W_foundation:vars]
+app_name = foundation
+
+
+[SH_W_htfFund]
+172.16.2.26     instance_id=1
+172.16.2.106     instance_id=2
+[SH_W_htfFund:vars]
+app_name = htfFund
+
+[SH_W_industrypay]
+172.16.2.30     instance_id=1
+172.16.2.110     instance_id=2
+[SH_W_industrypay:vars]
+app_name = industrypay
+
+[SH_W_runManager]
+172.16.2.27     instance_id=1
+172.16.2.107     instance_id=2
+[SH_W_runManager:vars]
+app_name = runManager
+
+
+[SH_W_trade]
+172.16.2.28     instance_id=1
+172.16.2.108     instance_id=2
+[SH_W_trade:vars]
+app_name = trade
+
+[SH_W_guard]
+#172.16.201.1     instance_id=1
+#172.16.201.2     instance_id=2
+[SH_W_guard:vars]
+app_name = guard
+
+[web_group:children]
+SH_W_batchMonitor
+SH_W_cashier
+SH_W_dispatchingCenter
+SH_W_fdc
+SH_W_foundation
+SH_W_htfFund
+SH_W_runManager
+SH_W_trade
+SH_W_industrypay
+SH_W_guard
+[web_group:vars]
+group_name = web
+group_relation = consumer

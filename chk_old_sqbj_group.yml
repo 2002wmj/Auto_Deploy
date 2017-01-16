@@ -1,0 +1,8 @@
+- hosts:
+  - all
+  remote_user: root
+  gather_facts: false
+  vars:
+  tasks:
+  - script: 'roles/SqbjDeploy/files/script/modify_old_sqbj_group.sh {{dubbo_group}} {{app_names}}' 
+    when: instance_id in instances

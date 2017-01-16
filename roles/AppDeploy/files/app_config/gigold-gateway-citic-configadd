@@ -1,0 +1,9 @@
+rderprefix=P
+citic.notify.url=http://zx.gigold.com/fdc/citic/depositNotify.do
+ecitic.env.test=false
+ecitic.test.merid=302100094000013
+ecitic.pro.merid=302301073720001
+esticOrderUrl.pro=https://b2c.bank.ecitic.com/WebDLink/cpplaceorder.do
+esticOrderUrl.test=https://dlink.test.bank.ecitic.com/WebDLink/cpplaceorder.do
+esticQueryUrl.test=https://dlink.test.bank.ecitic.com/WebDLink/cporderresultqry.do
+esticQueryUrl.pro=https://b2c.bank.ecitic.com/WebDLink/cporderresultqry.do

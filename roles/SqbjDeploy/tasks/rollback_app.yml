@@ -1,0 +1,2 @@
+- script: "script/rollback_app.sh {{item}} {{group_name}} {{project_name}}"
+  with_items: "{{service_name}}"

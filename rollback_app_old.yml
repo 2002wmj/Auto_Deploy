@@ -1,0 +1,12 @@
+- hosts:
+#  - service_group
+#  - web_group
+#  - gateway_group
+  - all
+  remote_user: root
+  gather_facts: false
+  vars:
+  - TaskName: update_app
+  - AppVersion: /old_tar/
+  roles:
+  - { role: AppDeploy, when: instance_id in instances }

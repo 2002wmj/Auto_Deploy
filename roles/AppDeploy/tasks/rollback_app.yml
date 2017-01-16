@@ -1,0 +1,1 @@
+- script: "script/rollback_app.sh {{app_name}} {{group_name}}"

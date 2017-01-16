@@ -1,0 +1,9 @@
+- hosts:
+  - all
+  remote_user: root
+  gather_facts: false
+  vars:
+  - TaskName: modify_dubbo_group
+  roles:
+  - role: "{{role_name}}"
+    when: instance_id in instances

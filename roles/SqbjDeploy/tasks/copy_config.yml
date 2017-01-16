@@ -1,0 +1,4 @@
+- file: dest={{config_dir}} mode=755 owner=oper group=oper state=directory
+  with_items: "{{service_name}}"
+- template: src={{config_name}}.j2 dest={{config_dir}}/server.properties owner=oper group=oper backup=yes
+  with_items: "{{service_name}}"

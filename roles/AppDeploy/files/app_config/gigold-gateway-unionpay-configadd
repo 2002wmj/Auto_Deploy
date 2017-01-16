@@ -1,0 +1,14 @@
+unionpay.deposit.backurl=https://i.gigold.com/fdc/unionpay/depositNotify.do
+unionpay.refund.backurl=https://i.gigold.com/fdc/unionpay/refundNotify.do
+
+unionpay.debit.merid=302430148160016
+unionpay.debit.merid.password=123qwe
+unionpay.debit.merid.signCert=/data/deploy/gigold-gateway-unionpay/certs/gigold-16.pfx
+unionpay.all.merid=302430148160010
+unionpay.all.merid.password=123qwe
+unionpay.all.merid.signCert=/data/deploy/gigold-gateway-unionpay/certs/gigold.pfx
+acpsdk.validateCert.dir=/data/deploy/gigold-gateway-unionpay/certs/
+acpsdk.appTransUrl=https://gateway.95516.com/gateway/api/appTransReq.do
+acpsdk.fileTransUrl=https://filedownload.95516.com/
+acpsdk.backTransUrl=https://gateway.95516.com/gateway/api/cardTransReq.do
+acpsdk.singleQueryUrl=https://gateway.95516.com/gateway/api/queryTrans.do

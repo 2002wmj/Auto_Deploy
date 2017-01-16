@@ -1,0 +1,403 @@
+2016-05-09 15:49:33,152 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l test -e '{"instances":[1, 2]}' 
+2016-05-09 15:57:03,358 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l test -e '{"instances":[1, 2]}' 
+2016-05-09 15:57:07,875 AutoDeploy INFO [The ansible is tasks success ]
+2016-05-09 15:57:41,160 AutoDeploy INFO ansible-cmd: ansible-playbook install_tomcat.yml -l test -e '{"instances":[1, 2]}' 
+2016-05-09 15:57:41,626 AutoDeploy INFO [The ansible is tasks success ]
+2016-05-09 16:24:58,448 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2]}' 
+2016-05-09 16:25:18,233 AutoDeploy ERROR [The ansible is tasks failure ]
+2016-05-09 17:49:51,932 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-09 17:49:53,289 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-09 17:50:29,342 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-09 17:50:36,654 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-10 17:49:19,320 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-10 17:49:33,650 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-10 17:49:57,305 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-10 17:49:58,669 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:21:25,254 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:21:27,675 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:21:48,431 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:21:49,742 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:22:56,636 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:23:06,985 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:23:46,669 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:23:48,031 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:24:01,533 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:24:13,468 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:24:30,234 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:24:40,850 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:24:57,432 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:25:07,942 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:26:01,135 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:26:24,554 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:27:44,124 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:27:52,498 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:28:09,040 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:28:20,673 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:29:30,597 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:29:41,339 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:41:20,440 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:41:21,871 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 11:41:36,042 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 11:41:46,480 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 14:00:42,865 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 14:01:02,898 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:11:40,288 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:11:41,610 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:12:45,099 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:12:46,318 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:18:07,812 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:18:09,014 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-11 17:19:18,425 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:19:29,446 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-11 17:22:04,796 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:22:06,258 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:22:28,205 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:22:29,415 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-11 17:23:29,996 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:23:37,642 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:26:10,038 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:26:11,228 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:27:17,407 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:27:18,611 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:28:56,517 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:28:57,720 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-11 17:29:17,116 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-11 17:29:23,813 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:36:22,459 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-11 17:36:23,849 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-11 17:36:44,625 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-11 17:36:45,883 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-11 17:37:08,023 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-11 17:37:15,414 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 10:33:27,101 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 10:33:28,556 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 10:33:41,131 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 10:33:42,372 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-12 10:34:19,475 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 10:34:39,420 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 10:35:24,227 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 10:35:25,639 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 10:35:35,282 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 10:35:36,454 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-12 10:35:48,434 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 10:35:58,683 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 11:49:45,106 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 11:49:46,175 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-12 14:27:11,646 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:27:13,857 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 14:27:50,592 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:27:52,596 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 14:28:42,029 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:28:44,067 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 14:29:10,731 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:29:12,749 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 14:31:31,903 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:31:33,950 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 14:32:07,731 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:32:09,845 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 14:42:25,926 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:42:27,505 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 14:42:39,052 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:42:40,347 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-12 14:43:09,553 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-12 14:43:19,752 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-12 16:33:30,828 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l test -e '{"instances":[1, 2],"full_release":false,"dubbo_group_id":"I"}' 
+2016-05-12 16:33:31,941 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-13 11:22:06,402 AutoDeploy INFO ansible-cmd: ansible-playbook install_jdk.yml -l SH_S_riskControl,SH_G_applepay,SH_G_voiceCL -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-13 11:22:46,857 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-13 11:25:02,778 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_S_riskControl,SH_G_applepay,SH_G_voiceCL -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-13 11:25:06,591 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 20:01:32,043 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:02:37,724 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-17 20:17:07,187 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:20:12,703 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-17 20:20:40,635 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:21:15,118 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 20:27:21,565 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l web_group,service_group,gateway_group -e '{"instances":[2],"full_release":true,"dubbo_group_id":"B"}' 
+2016-05-17 20:27:27,541 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 20:34:27,871 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1],"full_release":true}' 
+2016-05-17 20:35:07,301 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-17 20:39:17,162 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l SH_S_riskControl,SH_G_applepay,SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:39:19,548 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 20:39:46,962 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:40:41,318 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-17 20:40:58,073 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l SH_S_riskControl,SH_G_applepay,SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:40:59,765 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-17 20:41:13,912 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l SH_S_riskControl,SH_G_applepay,SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:41:16,361 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 20:43:17,966 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l SH_S_riskControl,SH_G_applepay,SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:43:31,267 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 20:44:24,529 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 20:45:33,546 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 21:13:18,909 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l SH_S_merchant -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 21:13:23,694 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 21:26:35,428 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 21:26:36,262 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-17 21:27:15,636 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 21:27:16,623 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 21:29:02,148 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 21:29:09,504 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 21:29:19,225 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 21:29:20,886 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 21:29:51,325 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l SH_G_voiceCL -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 21:29:55,901 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 22:05:04,743 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l SH_S_fundBatch -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 22:05:16,627 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 22:05:37,796 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l SH_S_fundBatch -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 22:05:42,531 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 22:42:38,815 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_S_fundBatch -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-17 22:42:43,511 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 23:28:02,024 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1],"full_release":true}' 
+2016-05-17 23:28:24,110 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 23:28:52,010 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l web_group,service_group,gateway_group -e '{"instances":[1],"full_release":true,"dubbo_group_id":"B"}' 
+2016-05-17 23:28:57,870 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-17 23:31:13,552 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1],"full_release":true}' 
+2016-05-17 23:31:49,736 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-18 14:30:57,345 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_G_citic -e '{"instances":[1],"full_release":true}' 
+2016-05-18 14:31:00,533 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-18 14:31:18,634 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_G_citic -e '{"instances":[2],"full_release":true}' 
+2016-05-18 14:31:21,787 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-18 14:31:43,734 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_G_citic -e '{"instances":[1],"full_release":true}' 
+2016-05-18 14:31:50,391 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-18 14:32:02,207 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_G_citic -e '{"instances":[2],"full_release":true}' 
+2016-05-18 14:32:07,969 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-19 15:11:59,093 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_G_citic -e '{"instances":[1],"full_release":true}' 
+2016-05-19 15:12:05,779 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-19 15:12:13,992 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_G_citic -e '{"instances":[2],"full_release":true}' 
+2016-05-19 15:12:20,665 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-20 11:31:05,914 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1],"full_release":true}' 
+2016-05-20 11:31:07,501 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-20 11:32:51,915 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1],"full_release":true}' 
+2016-05-20 11:32:53,513 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-20 11:41:05,209 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1],"full_release":true}' 
+2016-05-20 11:41:06,687 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-20 11:44:00,925 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[1],"full_release":true}' 
+2016-05-20 11:44:02,465 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-20 11:47:01,112 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l test -e '{"instances":[2],"full_release":true}' 
+2016-05-20 11:47:03,173 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-20 11:48:36,219 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_S_trade -e '{"instances":[1],"full_release":true}' 
+2016-05-20 11:48:39,493 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-20 11:49:23,618 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_G_trade,test -e '{"instances":[1],"full_release":true}' 
+2016-05-20 11:49:27,100 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-27 10:50:12,679 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-27 10:50:24,170 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:44:56,563 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-30 16:45:05,468 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-30 16:46:11,040 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:46:12,571 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:46:32,641 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:46:34,290 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:46:56,640 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:46:57,877 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-30 16:47:15,240 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:47:19,690 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:47:39,732 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:47:41,216 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:48:41,639 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:48:49,949 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-30 16:49:26,837 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:49:31,124 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:51:47,948 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:51:49,233 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-30 16:52:11,943 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:52:19,781 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:53:19,951 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:53:25,070 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-30 16:54:08,950 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:54:10,537 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:54:48,451 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:54:54,058 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 16:55:33,614 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l test -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 16:55:43,122 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 17:11:04,007 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_W_runManager,SH_S_runManager -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 17:11:08,006 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 17:17:51,865 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -l SH_G_fdcDownload,SH_G_htfFund,SH_G_smsBC,SH_G_voiceCL,SH_S_account,SH_S_billCenter,SH_S_cashier,SH_S_customer,SH_S_foundationBatch,SH_S_fundBatch,SH_S_industrypay,SH_S_merchant,SH_S_posp,SH_S_riskControl,SH_S_runManager,SH_S_trade,SH_W_cashier,SH_W_dispatching,SH_W_foundation,SH_W_htfFund,SH_W_runManager,SH_W_trade -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 17:17:58,639 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 22:58:09,142 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l web_group,service_group,gateway_group -e '{"instances":[2],"full_release":false}' 
+2016-05-30 22:58:31,453 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 22:59:06,759 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l SH_G_fdcDownload,SH_G_htfFund,SH_G_smsBC,SH_G_voiceCL,SH_S_account,SH_S_billCenter,SH_S_cashier,SH_S_customer,SH_S_foundationBatch,SH_S_fundBatch,SH_S_industrypay,SH_S_merchant,SH_S_posp,SH_S_riskControl,SH_S_runManager,SH_S_trade,SH_W_cashier,SH_W_dispatching,SH_W_foundation,SH_W_htfFund,SH_W_runManager,SH_W_trade -e '{"instances":[2],"full_release":false}' 
+2016-05-30 22:59:47,341 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:01:36,022 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l SH_G_fdcDownload,SH_G_htfFund,SH_G_smsBC,SH_G_voiceCL,SH_S_account,SH_S_billCenter,SH_S_cashier,SH_S_customer,SH_S_foundationBatch,SH_S_fundBatch,SH_S_industrypay,SH_S_merchant,SH_S_posp,SH_S_riskControl,SH_S_runManager,SH_S_trade,SH_W_cashier,SH_W_dispatching,SH_W_foundation,SH_W_htfFund,SH_W_runManager,SH_W_trade -e '{"instances":[2],"full_release":false,"dubbo_group_id":"A"}' 
+2016-05-30 23:01:39,853 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:25:03,269 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1],"full_release":false}' 
+2016-05-30 23:25:25,564 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:25:56,975 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l web_group,service_group,gateway_group -e '{"instances":[1],"full_release":false,"dubbo_group_id":"A"}' 
+2016-05-30 23:26:02,928 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:26:58,975 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l SH_G_fdcDownload,SH_G_htfFund,SH_G_smsBC,SH_G_voiceCL,SH_S_account,SH_S_billCenter,SH_S_cashier,SH_S_customer,SH_S_foundationBatch,SH_S_fundBatch,SH_S_industrypay,SH_S_merchant,SH_S_posp,SH_S_riskControl,SH_S_runManager,SH_S_trade,SH_W_cashier,SH_W_dispatching,SH_W_foundation,SH_W_htfFund,SH_W_runManager,SH_W_trade -e '{"instances":[1],"full_release":false}' 
+2016-05-30 23:27:38,872 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:31:52,567 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 23:33:03,303 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:38:35,058 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 23:40:13,648 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:41:04,392 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":false}' 
+2016-05-30 23:41:14,793 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-30 23:58:12,649 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_S_runManager -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-30 23:58:13,813 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:58:24,806 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l SH_S_runManager -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-30 23:58:43,721 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-30 23:58:53,606 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l SH_S_runManager -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-30 23:58:58,297 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:22:54,819 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 00:23:05,452 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:28:46,862 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true,"dubbo_group_id":"A"}' 
+2016-05-31 00:28:55,507 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:29:45,232 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 00:31:22,550 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:52:28,932 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_S_runManager,SH_W_runManager -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 00:52:34,789 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:52:55,374 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_S_runManager,SH_W_runManager -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 00:52:59,316 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:53:13,532 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l SH_S_runManager,SH_W_runManager -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 00:53:22,460 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:55:35,637 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l SH_S_runManager,SH_W_runManager -e '{"instances":[1, 2],"full_release":true,"dubbo_group_id":"A"}' 
+2016-05-31 00:55:36,891 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:55:52,236 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_S_runManager,SH_W_runManager -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 00:56:05,227 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:57:32,007 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true,"dubbo_group_id":"A"}' 
+2016-05-31 00:57:40,676 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 00:57:51,234 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 00:59:29,754 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 17:10:17,306 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -l test -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 17:10:18,335 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-05-31 17:13:12,480 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -l SH_S_cashier -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 17:13:13,681 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 17:34:05,424 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -l SH_S_dispatchingMonitor -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 17:34:08,888 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 17:34:21,723 AutoDeploy INFO ansible-cmd: ansible-playbook dubbo_group.yml -l SH_S_dispatchingMonitor -e '{"instances":[1, 2],"full_release":true,"dubbo_group_id":"A"}' 
+2016-05-31 17:34:22,776 AutoDeploy INFO [The ansible is tasks success!]
+2016-05-31 17:35:08,957 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_S_dispatchingMonitor -e '{"instances":[1, 2],"full_release":true}' 
+2016-05-31 17:35:15,838 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-01 12:09:41,241 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -l SH_W_dispatchingCenter -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-01 12:09:41,492 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-01 14:00:42,641 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_W_dispatchingCenter -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-01 14:00:43,024 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-01 14:03:36,722 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_W_dispatchingCenter -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-01 14:03:37,300 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-01 14:04:30,963 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_W_dispatchingCenter -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-01 14:05:07,259 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-01 14:05:24,271 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l SH_W_dispatchingCenter -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-01 14:05:40,887 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-01 14:06:05,840 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l SH_W_dispatchingCenter -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-01 14:06:10,283 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-01 16:03:10,730 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_W_dispatchingCenter -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-01 16:03:50,667 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-02 10:51:45,669 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -l SH_S_fundBatch -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-02 10:51:48,915 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-02 10:51:57,924 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -l SH_S_fundBatch -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-02 10:52:07,081 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-02 10:52:21,982 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -l SH_S_fundBatch -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-02 10:52:26,871 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-02 16:54:47,934 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -l SH_G_citic -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-02 16:54:54,663 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-06 10:33:19,204 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts -l gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-06 10:33:23,315 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-06 10:36:21,163 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts -l gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-06 10:36:25,126 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-06 10:38:31,559 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts -l web_group,service_group,gateway_group -e '{"instances":[1, 2],"full_release":true}' 
+2016-06-06 10:38:42,856 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-08 10:56:08,458 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts -l SH_S_dispatchingMonitor -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-08 10:56:09,719 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:34:14,423 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -i hosts -l test -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-12 16:34:19,241 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:34:41,586 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["mq", "user", "message", "neighbor"]}' 
+2016-06-12 16:34:44,092 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-12 16:35:03,388 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["mq", "user", "message", "neighbor"]}' 
+2016-06-12 16:35:21,289 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:35:41,392 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts -l test -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-12 16:35:43,235 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:35:54,391 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -i hosts -l test -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-12 16:35:56,334 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:36:13,247 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts -l test -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-12 16:36:18,824 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:36:33,891 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["mq", "user"]}' 
+2016-06-12 16:36:43,187 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:37:34,352 AutoDeploy INFO ansible-cmd: ansible-playbook rollback_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1],"full_release":true,"LH_service01": ["mq", "user", "message"]}' 
+2016-06-12 16:37:36,504 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:50:09,402 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["mq"]}' 
+2016-06-12 16:50:15,456 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:51:37,203 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["mq"]}' 
+2016-06-12 16:51:41,759 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 16:52:28,202 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["mq"]}' 
+2016-06-12 16:52:32,658 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 17:01:37,337 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["user"]}' 
+2016-06-12 17:01:42,907 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 17:10:36,009 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["message"]}' 
+2016-06-12 17:10:42,278 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 17:19:22,617 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":false,"LH_service01": ["neighbor"]}' 
+2016-06-12 17:19:28,021 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-12 17:20:07,116 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["user"]}' 
+2016-06-12 17:20:12,116 AutoDeploy INFO [The ansible is tasks success!]
+2016-06-15 18:00:20,651 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l web_group,service_group,gateway_group -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,('LH_gateway01,LH_service01,LH_web01', '"LH_gateway01": ["gigoldppay"], "LH_service01": ["mq", "user", "message", "neighbor"], "LH_web01": ["neighbor"]')}' 
+2016-06-15 18:00:20,667 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-15 18:02:26,969 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l web_group,service_group,gateway_group -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_gateway01": ["gigoldppay"], "LH_service01": ["mq", "user", "message", "neighbor"], "LH_web01": ["neighbor"]}' 
+2016-06-15 18:02:26,982 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-15 18:03:23,121 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l web_group,service_group,gateway_group -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_gateway01": ["gigoldppay"], "LH_service01": ["mq", "user", "message", "neighbor"], "LH_web01": ["neighbor"]}' 
+2016-06-15 18:03:23,135 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-20 16:07:33,280 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l web_group -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["neighbor"]}' 
+2016-06-20 16:07:33,299 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-20 16:08:41,921 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -i hosts_sqbj -l service_group -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["mq", "user", "message", "neighbor"]}' 
+2016-06-20 16:08:41,937 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-20 16:09:23,572 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l gateway_group -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_gateway01": ["gigoldppay"]}' 
+2016-06-20 16:09:23,588 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-21 10:30:51,703 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -i hosts -l test -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-21 10:30:51,720 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-21 10:38:15,447 AutoDeploy INFO ansible-cmd: ansible-playbook app_config.yml -i hosts -l SH_W_upload -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-21 10:38:15,459 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-21 11:35:02,473 AutoDeploy INFO ansible-cmd: ansible-playbook chk_dubbo_group.yml -i hosts -l test -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-06-21 11:35:02,484 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-27 15:59:47,756 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["mapi"]}' 
+2016-06-27 15:59:47,790 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-27 16:00:43,826 AutoDeploy INFO ansible-cmd: ansible-playbook restart_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["mapi"]}' 
+2016-06-27 16:00:43,839 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-06-27 16:44:20,480 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service01": ["business"]}' 
+2016-06-27 16:44:20,496 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-09 17:41:22,664 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l LH_service02 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_service02": ["operation"]}' 
+2016-09-09 17:41:22,688 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-12 11:42:31,578 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_gigold -l SH_S_cashier,SH_S_customer,SH_S_dispatchingMonitor -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-09-12 11:42:31,592 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-14 11:15:53,657 AutoDeploy INFO ansible-cmd: ansible-playbook install_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["htmllinkManage", "htmlmerchant"]}' 
+2016-09-14 11:15:53,674 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-14 11:48:58,937 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["html@merchant"]}' 
+2016-09-14 11:48:58,957 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-14 11:50:53,473 AutoDeploy INFO ansible-cmd: ansible-playbook stop_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["html+merchant"]}' 
+2016-09-14 11:50:53,493 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-21 17:43:24,582 AutoDeploy INFO ansible-cmd: ansible-playbook update_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["mapi"]}' 
+2016-09-21 17:43:24,598 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-21 17:51:18,759 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["ast", "business"]}' 
+2016-09-21 17:51:18,773 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-23 17:55:01,795 AutoDeploy INFO ansible-cmd: ansible-playbook upgrade_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-09-23 17:55:01,822 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-09-23 17:55:59,921 AutoDeploy INFO ansible-cmd: ansible-playbook upgrade_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[1, 2],"full_release":true,"LH_web01": ["ast"]}' 
+2016-09-23 17:55:59,937 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 09:48:14,211 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[(1, 2)],"full_release":true,"LH_web01": ["ast"]}' 
+2016-11-22 09:48:14,236 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 09:48:35,467 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[1],"full_release":true}' 
+2016-11-22 09:48:35,484 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 09:50:10,539 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l LH_web01 -e '{"role_name":"SqbjDeploy","instances":[(1, 2)],"full_release":true,"LH_web01": ["mapi"]}' 
+2016-11-22 09:50:10,562 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 09:50:27,884 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l test -e '{"role_name":"AppDeploy","instances":[(1, 2)],"full_release":true}' 
+2016-11-22 09:50:27,903 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 09:51:58,842 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_customer -e '{"role_name":"AppDeploy","instances":[1],"full_release":true}' 
+2016-11-22 09:51:58,864 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 09:53:53,028 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[(1, 2)],"full_release":true}' 
+2016-11-22 09:53:53,046 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 09:55:46,266 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier,SH_S_customer -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-11-22 09:55:46,289 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 10:01:21,276 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":['1'],"full_release":true}' 
+2016-11-22 10:01:21,315 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 10:11:53,002 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-11-22 10:11:53,017 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 10:13:39,128 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":1,"full_release":true}' 
+2016-11-22 10:13:39,144 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 10:15:23,536 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[1],"full_release":true}' 
+2016-11-22 10:15:23,551 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 10:16:16,703 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[1, 2],"full_release":true}' 
+2016-11-22 10:16:16,717 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 10:16:52,953 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[1],"full_release":true}' 
+2016-11-22 10:16:52,967 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-22 10:17:11,345 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_gigold -l SH_S_cashier -e '{"role_name":"AppDeploy","instances":[1, 2, 3],"full_release":true}' 
+2016-11-22 10:17:11,358 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-23 19:57:40,711 AutoDeploy INFO ansible-cmd: ansible-playbook start_app.yml -i hosts_sqbj -l LH_service01 -e '{"role_name":"SqbjDeploy","instances":[1],"full_release":true,"LH_service01": ["message"]}' 
+2016-11-23 19:57:40,743 AutoDeploy ERROR [The ansible is tasks failure!]
+2016-11-23 20:25:28,444 AutoDeploy INFO ansible-cmd: ansible-playbook status_app.yml -i hosts_sqbj -l SM_gateway01 -e '{"role_name":"SqbjDeploy","instances":[1],"full_release":true,"SM_gateway01": ["guardManager"]}' 
+2016-11-23 20:25:28,464 AutoDeploy ERROR [The ansible is tasks failure!]

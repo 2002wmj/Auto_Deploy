@@ -1,0 +1,2 @@
+#站内交易通知地址
+inner.trade.notify.url=http://172.16.201.3:20900/api/message/send

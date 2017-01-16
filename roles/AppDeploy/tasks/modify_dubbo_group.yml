@@ -1,0 +1,1 @@
+- raw: 'grep "dubbo.group" {{config_dir}}/server.properties && sed -i s/^dubbo.group=pro.*/dubbo.group=pro_{{dubbo_group_id}}/g {{config_dir}}/server.properties'

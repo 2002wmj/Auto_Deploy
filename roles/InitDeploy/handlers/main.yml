@@ -1,0 +1,6 @@
+- name: install jdk
+  raw: "tar -zxvf /root/jdk-7u79-linux-x64.tar.gz -C /usr/local/"
+- name: add java export
+  script: script/add_java_export.sh
+- name: install tomcat
+  raw: "rpm -ivh /root/tomcat-gigold-web-{{ app_name }}-1.5-1.0.noarch.rpm"

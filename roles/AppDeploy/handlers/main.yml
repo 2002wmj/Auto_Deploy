@@ -1,0 +1,17 @@
+- name: backup app dir
+  script: "script/update_backup.sh {{app_name}} {{group_name}}"
+  when: InstallApp is not defined
+- name: rm old app dir
+  raw: "rm -rf {{app_dir}}/ROOT"
+  ignore_errors: yes
+  when: full_release == true or group_name == "web"
+- name: install app tar
+  raw: "tar -zxvf /root/{{app_tar_name}} -C /data/deploy/ && chown -R oper:oper /data/deploy &&chmod -R g-w /data/deploy"
+- name: copy config add
+  copy: src=app_config/{{addconfig_name}} dest="/root" owner=root group=root backup=yes
+  when: config_add == "yes"
+- name: add config
+  raw: "cat /root/{{addconfig_name}} >> /tmp/gigold-{{group_name}}-{{app_name}}-config.j2"
+  when: config_add == "yes"
+- name: update app
+  script: 'script/update_app.sh {{app_name}} {{group_name}} {{full_release}} {{AutoUpgrade}}'

@@ -1,0 +1,12 @@
+- hosts: 
+#  - service_group
+#  - web_group
+#  - gateway_group
+  - all
+  remote_user: root
+  gather_facts: false
+  vars:
+  - TaskName: install_logstash
+  - group_name: gigold
+  roles:
+  - InitDeploy

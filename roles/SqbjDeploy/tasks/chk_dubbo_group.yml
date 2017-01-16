@@ -1,0 +1,5 @@
+- raw: 'cat {{config_dir}}/server.properties|grep "dubbo.group"'
+  with_items: "{{service_name}}"
+  register: dubbo_group
+- debug: var=dubbo_group.results[0].stdout_lines 
+#  with_items: "{{dubbo_group.results}}"

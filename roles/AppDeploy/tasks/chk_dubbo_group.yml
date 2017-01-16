@@ -1,0 +1,3 @@
+- raw: 'cat {{config_dir}}/server.properties|grep "dubbo.group"'
+  register: dubbo_group
+- debug: msg="{{dubbo_group.stdout_lines}}"

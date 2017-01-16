@@ -1,0 +1,112 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# Ex 1: Ungrouped hosts, specify before any group headers.
+
+####ansible-test#######
+[LH_service03]
+#172.16.1.210  instance_id=1
+#172.16.1.211  instance_id=2
+[LH_service03:vars]
+service_name = LH_service03
+
+###### All-sqbj-apps #############
+[LH_web01]
+172.16.201.1   instance_id=1
+172.16.201.2   instance_id=2
+[LH_web01:vars]
+project_name = lehome
+service_name = LH_web01
+
+[LH_web02]
+172.16.201.20   instance_id=1
+172.16.201.21   instance_id=2
+[LH_web02:vars]
+project_name = lehome
+service_name = LH_web02
+
+
+[web_group:children]
+LH_web01
+LH_web02
+#SM_web01
+
+[web_group:vars]
+group_name = web
+
+[LH_service01]
+172.16.201.18   instance_id=1
+172.16.201.19   instance_id=2
+[LH_service01:vars]
+project_name = lehome
+service_name = LH_service01
+
+[LH_service02]
+172.16.201.16   instance_id=1
+172.16.201.17   instance_id=2
+[LH_service02:vars]
+project_name = lehome
+service_name = LH_service02
+
+[LH_service03]
+172.16.201.22   instance_id=1
+172.16.201.23   instance_id=2
+[LH_service03:vars]
+project_name = lehome
+service_name = LH_service03
+
+
+
+[service_group:children]
+LH_service01
+LH_service02
+LH_service03
+#SM_service01
+
+[service_group:vars]
+group_name = service
+
+
+[LH_gateway01]
+172.16.201.6   instance_id=1
+172.16.201.7   instance_id=2
+[LH_gateway01:vars]
+project_name = lehome
+service_name = LH_gateway01
+
+[SM_gateway01]
+172.16.202.21 instance_id=1
+172.16.202.22 instance_id=2
+[SM_gateway01:vars]
+project_name = smart
+service_name = SM_gateway01
+
+[SM_web01]
+172.16.202.23 instance_id=1
+172.16.202.24 instance_id=2
+[SM_web01:vars]
+project_name = smart
+service_name = SM_web01
+
+[SM_service01]
+172.16.202.25 instance_id=1
+172.16.202.26 instance_id=2
+[SM_service01:vars]
+project_name = smart
+service_name = SM_service01
+
+[gateway_group:children]
+LH_gateway01
+#SM_gateway01
+
+[gateway_group:vars]
+group_name = gateway
+
+

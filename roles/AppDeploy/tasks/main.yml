@@ -1,0 +1,12 @@
+- include: update_app.yml
+  when: TaskName=="update_app"
+- include: copy_config.yml
+  when: TaskName=="copy_config"
+- include: app_server.yml
+  when: TaskName=="app_server"
+- include: rollback_app.yml
+  when: TaskName=="rollback_app"
+- include: modify_dubbo_group.yml
+  when: TaskName=="modify_dubbo_group"
+- include: chk_dubbo_group.yml
+  when: TaskName=="chk_dubbo_group"

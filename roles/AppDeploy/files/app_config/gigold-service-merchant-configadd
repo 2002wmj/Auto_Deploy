@@ -1,0 +1,7 @@
+#FTP
+ftp.ip=172.16.2.35
+ftp.port=8145
+ftp.username=admin
+ftp.password=gp1@admin
+dowonload.server=https://i.gigold.com/upload
+sys.smsSwitch=true
