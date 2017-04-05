@@ -262,9 +262,10 @@ app_name = payment
 app_name = guardRoute
 
 [SH_G_guard]
-172.16.202.16     instance_id=1
-172.16.202.15     instance_id=2
-172.16.202.17     instance_id=3
+#172.16.202.16     instance_id=1
+#172.16.202.15     instance_id=2
+#172.16.202.17     instance_id=3
+#172.16.202.28     instance_id=4
 [SH_G_guard:vars]
 app_name = guard
 

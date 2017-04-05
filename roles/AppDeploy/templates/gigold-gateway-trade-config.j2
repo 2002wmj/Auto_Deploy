@@ -58,7 +58,7 @@ cmpay.salt.des=l!#!j)!*y&
 ##############################    CMPAY    #######
 
 ##############################  SQBJ-START  #######
-sqbj.push.message.url=http://172.16.201.3:20900/api/message/send
+sqbj.push.message.url=http://api.shequbanjing.com/papi/message/sendAppNotice.do
 ##############################  SQBJ-END  #######
 ##############################  YIHONG-START  #######
 yihong.url.productSearch=http://218.244.151.158:81/mffp_service/router/YHMffpInterfaceEntry/queryproList
@@ -69,6 +69,16 @@ yihong.agentId.des=5a61136cfd4048e392fa67324001f7ac
 yihong.key.des=9c92c5245b564dd8a5937d0522983f9b
 yihong.listen.port=8903
 yihong.listen.content.path=/gigold-gateway-trade/phone/yihong/notify
+
+yihong.url.productSearchFlow=http://115.29.226.174:8000/foms/service/card/getAll.json
+yihong.url.orderPaymentFlow=http://115.29.226.174:8000/foms/service/openCard.json
+yihong.url.orderStatusSearchFlow=http://115.29.226.174:8000/foms/service/orderStatus/get/
+yihong.url.productFlowSynch=http://115.29.226.174:8000/foms/service/card/getAll.json
+yihong.listen.flow.port=8906
+yihong.listen.content.flow.path=/gigold-gateway-trade/phone/yihong/notify
+yihong.userCode.des=jigao
+yihong.secretKey.des=D1122103V1647rQ6
+yihong.mobileFrom.url=http://www.114huoche.com/shouji/
 ##############################  YIHONG-END  #######
 ##############################  YUNCHANG-START  #######
 yunchang.url.orderPayment=http://tds.yun-chang.com/api/FlowCharge
